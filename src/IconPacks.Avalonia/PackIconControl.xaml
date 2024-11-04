@@ -1,0 +1,18 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="urn:iconpacks-avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconControl Kind="{x:Static iconPacks:PackIconBoxIconsKind.SolidBowlHot}" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconControl.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconControl" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconControl}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControl.Theme}"
+                  TargetType="iconPacks:PackIconControl" />
+
+</ResourceDictionary>

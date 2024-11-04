@@ -1,0 +1,20 @@
+; Top-most http://editorconfig.org/ file
+root = true
+
+[*]
+end_of_line = crlf
+indent_style = space
+max_line_length = 190
+
+; 4-column tab indentation
+[*.{cs,csproj,xaml,xml,props,targets,nuspec}]
+indent_size = 4
+
+[*.{yml,json}]
+indent_size = 2
+max_line_length = off
+
+[*.md]
+indent_size = 2
+max_line_length = off
+trim_trailing_whitespace = false
