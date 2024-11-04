@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
+        <DefineConstants>$(DefineConstants);AVALONIA</DefineConstants>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <LangVersion>latest</LangVersion>
+        <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+        <Nullable>disable</Nullable>
+        <GenerateLibraryLayout>true</GenerateLibraryLayout>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>IconPacks.Avalonia.Core</AssemblyName>
+        <Title>IconPacks.Avalonia.Core</Title>
+        <RootNamespace>IconPacks.Avalonia</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+        <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" IncludeAssets="build;compile" />
+        <PackageReference Include="System.Text.Json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="**/*.xaml" />
+    </ItemGroup>
+
+</Project>

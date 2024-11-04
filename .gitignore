@@ -348,3 +348,16 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+#Rider 
+.idea/
+
+# Generated files
+*_wpftmp.csproj
+
+# cake
+tools/*
+!tools/packages.config
+
+# XamlStyler
+!XamlStyler/

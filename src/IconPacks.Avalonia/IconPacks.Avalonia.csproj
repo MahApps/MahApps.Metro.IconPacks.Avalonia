@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);ALL</DefineConstants>
+        <AssemblyName>IconPacks.Avalonia</AssemblyName>
+        <Title>IconPacks.Avalonia</Title>
+        <RootNamespace>IconPacks.Avalonia</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.BoxIcons\IconPacks.Avalonia.BoxIcons.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="**/*.xaml" />
+    </ItemGroup>
+
+</Project>

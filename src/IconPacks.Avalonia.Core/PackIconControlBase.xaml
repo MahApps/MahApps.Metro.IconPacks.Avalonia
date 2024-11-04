@@ -1,0 +1,61 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="urn:iconpacks-avalonia"
+                    x:ClassModifier="internal">
+
+    <ControlTemplate x:Key="IconPacks.Avalonia.PackIconControlBase.Template" TargetType="iconPacks:PackIconControlBase">
+        <Border CornerRadius="{TemplateBinding CornerRadius}"
+                ClipToBounds="{TemplateBinding ClipToBounds}"
+                Padding="{TemplateBinding Padding}"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+            <Grid x:Name="PART_InnerGrid">
+                <Viewbox x:Name="PART_ViewBox">
+                    <Path x:Name="PART_IconPath"
+                          Fill="{TemplateBinding Foreground}"
+                          Data="{TemplateBinding Data}"
+                          Stretch="Uniform"
+                          UseLayoutRounding="False" />
+                </Viewbox>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconControlBase.Theme" TargetType="iconPacks:PackIconControlBase">
+        <Setter Property="Height" Value="{DynamicResource IconElementThemeHeight}" />
+        <Setter Property="Width" Value="{DynamicResource IconElementThemeWidth}" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="FlowDirection" Value="LeftToRight" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Template" Value="{DynamicResource IconPacks.Avalonia.PackIconControlBase.Template}" />
+
+        <!-- icon is filled -->
+        <Style Selector="^:icon-filled /template/ Path#PART_IconPath">
+            <Setter Property="Fill" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+        </Style>
+
+        <!-- icon is outlined -->
+        <Style Selector="^:icon-outlined /template/ Path#PART_IconPath">
+            <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            <Setter Property="StrokeThickness" Value="2" />
+            <Setter Property="StrokeLineCap" Value="Round" />
+            <Setter Property="StrokeJoin" Value="Round" />
+            <Setter Property="Width" Value="24" />
+            <Setter Property="Height" Value="24" />
+        </Style>
+
+        <!-- flipped icon data -->
+        <Style Selector="^:icon-data-flipped-vertically /template/ Viewbox#PART_ViewBox">
+            <Setter Property="RenderTransform" Value="scale(1, -1)" />
+        </Style>
+    </ControlTheme>
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconControlBase}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconControlBase" />
+
+</ResourceDictionary>
