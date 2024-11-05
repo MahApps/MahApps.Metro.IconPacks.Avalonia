@@ -1,0 +1,34 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Company>MahApps</Company>
+        <Product>IconPacks.Avalonia</Product>
+        <Copyright>Copyright &#169; $([System.DateTime]::Today.ToString(yyyy)) MahApps, Jan Karger</Copyright>
+        <Description>IconPacks for stylish awesome Avalonia applications.</Description>
+        <PackageDescription>IconPacks for stylish awesome Avalonia applications.</PackageDescription>
+
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <Version>1.0.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <InformationalVersion>1.0.0.0</InformationalVersion>
+
+        <Authors>Jan Karger</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/MahApps/IconPacks.Avalonia</PackageProjectUrl>
+        <PackageIcon>logo_small.png</PackageIcon>
+        <PackageTags>Avalonia;AvaloniaUI;Windows;UI;Modern;ModernUI;Material;XAML;Library;.NET;C#;Icon</PackageTags>
+        <PackageReleaseNotes>https://github.com/MahApps/IconPacks.Avalonia/releases</PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/MahApps/IconPacks.Avalonia.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup Label="PackageIcon">
+        <None Include="$(MSBuildThisFileDirectory)/../resources/logo_small.png" Pack="true" Visible="false" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
+    </ItemGroup>
+
+</Project>

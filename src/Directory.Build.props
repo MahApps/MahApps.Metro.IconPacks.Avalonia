@@ -2,12 +2,16 @@
 
     <PropertyGroup>
         <TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
+
         <AnalysisLevel>latest</AnalysisLevel>
         <LangVersion>latest</LangVersion>
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+
         <!--<Nullable>enable</Nullable>-->
         <Nullable>disable</Nullable>
+
         <GenerateLibraryLayout>true</GenerateLibraryLayout>
+
         <!-- <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio> -->
     </PropertyGroup>
 
@@ -21,38 +25,8 @@
         <DefineConstants>$(DefineConstants);AVALONIA</DefineConstants>
     </PropertyGroup>
 
-    <!-- SourceLink -->
-    <PropertyGroup>
-        <!-- Optional: Declare that the Repository URL can be published to NuSpec -->
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <IncludeSymbols>false</IncludeSymbols>
-        <!-- Optional: Embed source files that are not tracked by the source control manager to the PDB -->
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <!-- Optional: Include PDB in the built .nupkg -->
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb;.xml;.xaml</AllowedOutputExtensionsInPackageBuildOutputFolder>
-        <!-- https://github.com/dotnet/sourcelink/blob/master/docs/README.md#embedallsources -->
-        <EmbedAllSources>True</EmbedAllSources>
-    </PropertyGroup>
-
-    <!-- PDB-Options -->
-    <PropertyGroup>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>Embedded</DebugType>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
-        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(APPVEYOR)' == 'True'">
-        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <!-- Workaround for https://github.com/dotnet/sdk/issues/11105 -->
-        <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageRoot)))" Condition="'$(NuGetPackageRoot)' != ''" />
-    </ItemGroup>
+    <Import Project="..\build\SignAssembly.props" />
+    <Import Project="..\build\SourceLink.props" />
+    <Import Project="..\build\SharedVersion.props" />
 
 </Project>

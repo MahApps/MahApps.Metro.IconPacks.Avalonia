@@ -1,14 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
-        <DefineConstants>$(DefineConstants);AVALONIA</DefineConstants>
-        <AnalysisLevel>latest</AnalysisLevel>
-        <LangVersion>latest</LangVersion>
-        <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
-        <Nullable>disable</Nullable>
-        <GenerateLibraryLayout>true</GenerateLibraryLayout>
-    </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <AssemblyName>IconPacks.Avalonia.Core</AssemblyName>
