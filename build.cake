@@ -32,6 +32,7 @@ public class BuildData
     public bool IsLocalBuild { get; set; }
     public bool IsPullRequest { get; set; }
     public bool IsPrerelease { get; set; }
+    public bool IsRunningOnCI { get; set; }
     public GitVersion GitVersion { get; set; }
 
     public BuildData(
@@ -72,6 +73,7 @@ Setup<BuildData>(ctx =>
     )
     {
         IsLocalBuild = BuildSystem.IsLocalBuild,
+        IsRunningOnCI = BuildSystem.GitHubActions.IsRunningOnGitHubActions || BuildSystem.AppVeyor.IsRunningOnAppVeyor,
         IsPullRequest =
             (BuildSystem.GitHubActions.IsRunningOnGitHubActions && BuildSystem.GitHubActions.Environment.PullRequest.IsPullRequest)
             || (BuildSystem.AppVeyor.IsRunningOnAppVeyor && BuildSystem.AppVeyor.Environment.PullRequest.IsPullRequest)
@@ -87,7 +89,8 @@ Setup<BuildData>(ctx =>
     Information("GitVersion             : {0}", gitVersionPath);
     Information("Branch                 : {0}", buildData.GitVersion.BranchName);
     Information("Configuration          : {0}", buildData.Configuration);
-    Information("IsLocalBuild           : {0}", buildData.IsLocalBuild);
+    Information("IsRunningOnCI          : {0}", buildData.IsRunningOnCI);
+    Information("IsPrerelease           : {0}", buildData.IsPrerelease);
     Information("IsPrerelease           : {0}", buildData.IsPrerelease);
     Information("Informational   Version: {0}", buildData.GitVersion.InformationalVersion);
     Information("SemVer          Version: {0}", buildData.GitVersion.SemVer);
@@ -135,6 +138,7 @@ Task("Build")
       AssemblyVersion = data.GitVersion.AssemblySemVer,
       FileVersion = data.GitVersion.AssemblySemFileVer,
       InformationalVersion = data.GitVersion.InformationalVersion,
+      ContinuousIntegrationBuild = data.IsRunningOnCI,
       ArgumentCustomization = args => args.Append("/m").Append("/nr:false") // The /nr switch tells msbuild to quite once it's done
     };
     // msbuildSettings.FileLoggers.Add(
@@ -169,7 +173,8 @@ Task("Pack")
       Version = data.GitVersion.NuGetVersion,
       AssemblyVersion = data.GitVersion.AssemblySemVer,
       FileVersion = data.GitVersion.AssemblySemFileVer,
-      InformationalVersion = data.GitVersion.InformationalVersion
+      InformationalVersion = data.GitVersion.InformationalVersion,
+      ContinuousIntegrationBuild = data.IsRunningOnCI
     }
     .WithProperty("IncludeBuildOutput", "true")
     .WithProperty("RepositoryBranch", data.GitVersion.BranchName)

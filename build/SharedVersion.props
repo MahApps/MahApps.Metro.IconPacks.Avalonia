@@ -27,8 +27,4 @@
         <None Include="$(MSBuildThisFileDirectory)/../resources/logo_small.png" Pack="true" Visible="false" PackagePath="" />
     </ItemGroup>
 
-    <ItemGroup>
-        <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-    </ItemGroup>
-
 </Project>
