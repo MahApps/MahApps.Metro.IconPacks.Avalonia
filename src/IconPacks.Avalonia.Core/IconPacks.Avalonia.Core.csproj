@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>net8.0;net6.0;netstandard2.0</TargetFrameworks>
@@ -20,10 +20,6 @@
         <PackageReference Include="Avalonia" />
         <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" IncludeAssets="build;compile" />
         <PackageReference Include="System.Text.Json" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <AvaloniaResource Include="**/*.xaml" />
     </ItemGroup>
 
 </Project>

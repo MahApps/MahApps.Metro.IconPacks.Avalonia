@@ -16,8 +16,4 @@
         <ProjectReference Include="..\IconPacks.Avalonia.BoxIcons\IconPacks.Avalonia.BoxIcons.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <AvaloniaResource Include="**/*.xaml" />
-    </ItemGroup>
-
 </Project>

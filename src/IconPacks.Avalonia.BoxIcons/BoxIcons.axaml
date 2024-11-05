@@ -3,11 +3,10 @@
     <Styles.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <MergeResourceInclude Source="avares://IconPacks.Avalonia/PackIconControl.xaml" />
+                <MergeResourceInclude Source="avares://IconPacks.Avalonia.BoxIcons/PackIconBoxIcons.axaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Styles.Resources>
 
-    <StyleInclude Source="avares://IconPacks.Avalonia.Core/PackIcon.xaml" />
-    <StyleInclude Source="avares://IconPacks.Avalonia.BoxIcons/BoxIcons.xaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Core/PackIcon.axaml" />
 </Styles>
