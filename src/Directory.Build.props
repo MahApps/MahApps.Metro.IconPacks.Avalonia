@@ -7,22 +7,15 @@
         <LangVersion>latest</LangVersion>
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
 
-        <!--<Nullable>enable</Nullable>-->
         <Nullable>disable</Nullable>
 
         <GenerateLibraryLayout>true</GenerateLibraryLayout>
-
-        <!-- <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio> -->
     </PropertyGroup>
 
     <PropertyGroup>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>$(NoWarn);CS1591</NoWarn>
         <NoError>$(NoError);CS1591</NoError>
-    </PropertyGroup>
-
-    <PropertyGroup>
-        <DefineConstants>$(DefineConstants);AVALONIA</DefineConstants>
     </PropertyGroup>
 
     <Import Project="..\build\SignAssembly.props" />
