@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using IconPacks.Avalonia.BoxIcons;
+using IconPacks.Avalonia.Core;
 
 namespace IconPacks.Avalonia
 {

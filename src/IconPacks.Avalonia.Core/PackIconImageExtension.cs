@@ -1,7 +1,7 @@
 ﻿using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.Core
 {
     public abstract class BasePackIconImageExtension : MarkupExtension
     {

@@ -1,8 +1,8 @@
-﻿using Avalonia.Animation.Easings;
-using System;
+﻿using System;
+using Avalonia.Animation.Easings;
 using Avalonia.Markup.Xaml;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.Core
 {
     public interface IPackIconExtension
     {

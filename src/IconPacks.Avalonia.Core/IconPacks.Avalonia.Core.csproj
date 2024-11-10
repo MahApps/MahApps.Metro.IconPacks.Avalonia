@@ -3,7 +3,6 @@
     <PropertyGroup>
         <AssemblyName>IconPacks.Avalonia.Core</AssemblyName>
         <Title>IconPacks.Avalonia.Core</Title>
-        <RootNamespace>IconPacks.Avalonia</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

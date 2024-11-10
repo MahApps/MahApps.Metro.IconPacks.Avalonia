@@ -10,7 +10,7 @@ using Avalonia.Data;
 using Avalonia.Media;
 using Avalonia.Styling;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.Core
 {
     /// <summary>
     /// Class PackIconControlBase which is the base class for any PackIcon control.

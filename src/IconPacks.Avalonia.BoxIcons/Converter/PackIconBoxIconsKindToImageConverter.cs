@@ -1,6 +1,8 @@
 ﻿using Avalonia.Media;
+using IconPacks.Avalonia.Core;
+using IconPacks.Avalonia.Core.Converter;
 
-namespace IconPacks.Avalonia.Converter
+namespace IconPacks.Avalonia.BoxIcons.Converter
 {
     public class PackIconBoxIconsKindToImageConverter : PackIconKindToImageConverterBase
     {

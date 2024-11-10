@@ -1,6 +1,8 @@
 ﻿using Avalonia.Metadata;
 
-[assembly: XmlnsPrefix("urn:iconpacks-avalonia", "iconPacks")]
-[assembly: XmlnsDefinition("urn:iconpacks-avalonia", "IconPacks")]
-[assembly: XmlnsDefinition("urn:iconpacks-avalonia", "IconPacks.Avalonia")]
-[assembly: XmlnsDefinition("urn:iconpacks-avalonia", "IconPacks.Avalonia.Attributes")]
+[assembly: XmlnsPrefix("https://github.com/MahApps/IconPacks.Avalonia", "iconPacks")]
+[assembly: XmlnsDefinition("https://github.com/MahApps/IconPacks.Avalonia", "IconPacks")]
+[assembly: XmlnsDefinition("https://github.com/MahApps/IconPacks.Avalonia", "IconPacks.Avalonia")]
+[assembly: XmlnsDefinition("https://github.com/MahApps/IconPacks.Avalonia", "IconPacks.Avalonia.Core")]
+[assembly: XmlnsDefinition("https://github.com/MahApps/IconPacks.Avalonia", "IconPacks.Avalonia.Core.Attributes")]
+[assembly: XmlnsDefinition("https://github.com/MahApps/IconPacks.Avalonia", "IconPacks.Avalonia.Core.Converter")]

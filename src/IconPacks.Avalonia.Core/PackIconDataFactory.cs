@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Avalonia.Platform;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.Core
 {
     public static class PackIconDataFactory<TEnum> where TEnum : struct, Enum
     {

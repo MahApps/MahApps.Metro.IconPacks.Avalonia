@@ -1,4 +1,4 @@
-﻿namespace IconPacks.Avalonia
+﻿namespace IconPacks.Avalonia.Core
 {
     /// <summary>
     /// Enum PackIconFlipOrientation for the Flip property of any PackIcon control.

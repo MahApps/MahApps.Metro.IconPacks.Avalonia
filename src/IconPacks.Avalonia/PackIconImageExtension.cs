@@ -1,6 +1,8 @@
 ﻿using System;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
+using IconPacks.Avalonia.BoxIcons;
+using IconPacks.Avalonia.Core;
 
 namespace IconPacks.Avalonia
 {

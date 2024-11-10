@@ -1,9 +1,8 @@
-﻿using Avalonia.Media;
+﻿using System;
 using System.Globalization;
-using System;
-using Avalonia.Data;
+using Avalonia.Media;
 
-namespace IconPacks.Avalonia.Converter
+namespace IconPacks.Avalonia.Core.Converter
 {
     public abstract class PackIconKindToImageConverterBase : MarkupConverter
     {

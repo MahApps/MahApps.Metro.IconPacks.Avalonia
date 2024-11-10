@@ -1,4 +1,7 @@
 ﻿using Avalonia.Media;
+using IconPacks.Avalonia.BoxIcons;
+using IconPacks.Avalonia.Core;
+using IconPacks.Avalonia.Core.Converter;
 
 namespace IconPacks.Avalonia.Converter
 {

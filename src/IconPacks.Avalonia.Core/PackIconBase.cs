@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.Core
 {
     public abstract class PackIconBase : PathIcon
     {

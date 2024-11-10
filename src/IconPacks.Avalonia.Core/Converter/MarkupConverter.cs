@@ -1,10 +1,10 @@
 using System;
-using Avalonia.Data.Converters;
-using Avalonia.Markup.Xaml;
 using System.Globalization;
 using Avalonia.Data;
+using Avalonia.Data.Converters;
+using Avalonia.Markup.Xaml;
 
-namespace IconPacks.Avalonia.Converter
+namespace IconPacks.Avalonia.Core.Converter
 {
     /// <summary>
     /// MarkupConverter is a MarkupExtension which can be used for IValueConverter.

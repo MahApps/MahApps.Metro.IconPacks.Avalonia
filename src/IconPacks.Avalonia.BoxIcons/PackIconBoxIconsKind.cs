@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.BoxIcons
 {
     /// ******************************************
     /// This code is auto generated. Do not amend.

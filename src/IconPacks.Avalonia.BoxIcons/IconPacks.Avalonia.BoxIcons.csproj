@@ -5,7 +5,6 @@
         <IconsName>BoxIcons</IconsName>
         <AssemblyName>IconPacks.Avalonia.BoxIcons</AssemblyName>
         <Title>IconPacks.Avalonia.BoxIcons</Title>
-        <RootNamespace>IconPacks.Avalonia</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

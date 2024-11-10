@@ -4,7 +4,6 @@
         <DefineConstants>$(DefineConstants);ALL</DefineConstants>
         <AssemblyName>IconPacks.Avalonia</AssemblyName>
         <Title>IconPacks.Avalonia</Title>
-        <RootNamespace>IconPacks.Avalonia</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

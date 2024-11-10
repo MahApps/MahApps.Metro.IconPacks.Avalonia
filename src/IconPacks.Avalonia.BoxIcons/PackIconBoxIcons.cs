@@ -1,8 +1,9 @@
 ﻿using Avalonia;
 using Avalonia.Media;
-using IconPacks.Avalonia.Attributes;
+using IconPacks.Avalonia.Core;
+using IconPacks.Avalonia.Core.Attributes;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.BoxIcons
 {
     /// <summary>
     /// BoxIcons licensed under [SIL OFL 1.1](<see><cref>http://scripts.sil.org/OFL</cref></see>)

@@ -1,8 +1,9 @@
 ﻿using System;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
+using IconPacks.Avalonia.Core;
 
-namespace IconPacks.Avalonia
+namespace IconPacks.Avalonia.BoxIcons
 {
     public class BoxIconsImageExtension : BasePackIconImageExtension
     {

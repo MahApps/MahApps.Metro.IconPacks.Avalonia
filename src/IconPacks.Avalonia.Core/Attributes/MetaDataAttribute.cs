@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IconPacks.Avalonia.Attributes
+namespace IconPacks.Avalonia.Core.Attributes
 {
     /// <summary>
     /// Specifies meta data for a class.
