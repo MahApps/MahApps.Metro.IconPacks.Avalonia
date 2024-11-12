@@ -335,7 +335,6 @@ void SignFiles(string filesToSign, string description)
         return;
     }
 
-    var filesToSign = string.Join(" ", files.Select(f => MakeAbsolute(f).FullPath));
     var azureSignTool = Context.Tools.Resolve("azuresigntool.exe");
 
     var arguments = new ProcessArgumentBuilder()
