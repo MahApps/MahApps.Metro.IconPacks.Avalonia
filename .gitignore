@@ -354,6 +354,7 @@ MigrationBackup/
 
 # Generated files
 *_wpftmp.csproj
+FilesToSign.txt
 
 # cake
 tools/*

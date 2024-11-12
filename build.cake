@@ -3,9 +3,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #tool dotnet:?package=NuGetKeyVaultSignTool&version=3.2.3
-#tool dotnet:?package=AzureSignTool&version=4.0.1
+#tool dotnet:?package=AzureSignTool&version=6.0.0
+
 #tool dotnet:?package=GitReleaseManager.Tool&version=0.17.0
 #tool nuget:?package=GitVersion.CommandLine&version=5.12.0
+// #addin nuget:?package=Cake.Incubator&version=8.0.0
+#addin nuget:?package=Cake.FileHelpers&version=7.0.0
 
 ///////////////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -204,10 +207,17 @@ Task("Pack")
 Task("Sign")
     .WithCriteria<BuildData>((context, data) => !data.IsPullRequest)
     .ContinueOnError()
-    .Does(() =>
+    .Does<BuildData>(data =>
 {
-    var files = GetFiles(srcDir + "/IconPacks.Avalonia*/bin/**/IconPacks.Avalonia*.dll");
-    SignFiles(files, "IconPacks.Avalonia for stylish awesome Avalonia applications.");
+    var files = new FilePathCollection(
+        GetFiles(srcDir + "/**/*.csproj")
+        .SelectMany(f => GetFiles(srcDir + $"/**/bin/{data.Configuration}/**/{f.GetFilenameWithoutExtension()}.dll"))
+    );
+
+    // Information("Files -> {0}", files.Dump());
+    FileWriteLines("FilesToSign.txt", Encoding.UTF8, files.Select(f => f.ToString()).ToArray());
+
+    SignFiles("FilesToSign.txt", "IconPacks.Avalonia for stylish awesome Avalonia applications.");
 });
 
 Task("SignNuGet")
@@ -293,7 +303,7 @@ Task("CreateRelease")
 // HELPER
 ///////////////////////////////////////////////////////////////////////////////
 
-void SignFiles(IEnumerable<FilePath> files, string description)
+void SignFiles(string filesToSign, string description)
 {
     var vurl = EnvironmentVariable("azure-key-vault-url");
     if(string.IsNullOrWhiteSpace(vurl)) {
@@ -328,22 +338,23 @@ void SignFiles(IEnumerable<FilePath> files, string description)
     var filesToSign = string.Join(" ", files.Select(f => MakeAbsolute(f).FullPath));
     var azureSignTool = Context.Tools.Resolve("azuresigntool.exe");
 
-    ExecuteProcess(azureSignTool,
-                    new ProcessArgumentBuilder()
-                        .Append("sign")
-                        .Append(filesToSign)
-                        .AppendSwitchQuoted("--file-digest", "sha256")
-                        .AppendSwitchQuoted("--description", description)
-                        .AppendSwitchQuoted("--description-url", "https://github.com/MahApps/IconPacks.Avalonia")
-                        .Append("--no-page-hashing")
-                        .AppendSwitchQuoted("--timestamp-rfc3161", "http://timestamp.digicert.com")
-                        .AppendSwitchQuoted("--timestamp-digest", "sha256")
-                        .AppendSwitchQuoted("--azure-key-vault-url", vurl)
-                        .AppendSwitchQuotedSecret("--azure-key-vault-client-id", vcid)
-                        .AppendSwitchQuotedSecret("--azure-key-vault-tenant-id", vctid)
-                        .AppendSwitchQuotedSecret("--azure-key-vault-client-secret", vcs)
-                        .AppendSwitchQuotedSecret("--azure-key-vault-certificate", vc)
-                    );
+    var arguments = new ProcessArgumentBuilder()
+        .Append("sign");
+        .AppendSwitchQuoted("--input-file-list", filesToSign);
+
+    ExecuteProcess(azureSignTool, arguments
+        .AppendSwitchQuoted("--file-digest", "sha256")
+        .AppendSwitchQuoted("--description", description)
+        .AppendSwitchQuoted("--description-url", "https://github.com/MahApps/IconPacks.Avalonia")
+        .Append("--no-page-hashing")
+        .AppendSwitchQuoted("--timestamp-rfc3161", "http://timestamp.digicert.com")
+        .AppendSwitchQuoted("--timestamp-digest", "sha256")
+        .AppendSwitchQuoted("--azure-key-vault-url", vurl)
+        .AppendSwitchQuotedSecret("--azure-key-vault-client-id", vcid)
+        .AppendSwitchQuotedSecret("--azure-key-vault-tenant-id", vctid)
+        .AppendSwitchQuotedSecret("--azure-key-vault-client-secret", vcs)
+        .AppendSwitchQuotedSecret("--azure-key-vault-certificate", vc)
+    );
 }
 
 void ExecuteProcess(FilePath fileName, ProcessArgumentBuilder arguments, string workingDirectory = null)
