@@ -339,10 +339,8 @@ void SignFiles(string filesToSign, string description)
     var azureSignTool = Context.Tools.Resolve("azuresigntool.exe");
 
     var arguments = new ProcessArgumentBuilder()
-        .Append("sign");
-        .AppendSwitchQuoted("--input-file-list", filesToSign);
-
-    ExecuteProcess(azureSignTool, arguments
+        .Append("sign")
+        .AppendSwitchQuoted("--input-file-list", filesToSign)
         .AppendSwitchQuoted("--file-digest", "sha256")
         .AppendSwitchQuoted("--description", description)
         .AppendSwitchQuoted("--description-url", "https://github.com/MahApps/IconPacks.Avalonia")
@@ -354,7 +352,9 @@ void SignFiles(string filesToSign, string description)
         .AppendSwitchQuotedSecret("--azure-key-vault-tenant-id", vctid)
         .AppendSwitchQuotedSecret("--azure-key-vault-client-secret", vcs)
         .AppendSwitchQuotedSecret("--azure-key-vault-certificate", vc)
-    );
+        ;
+
+    ExecuteProcess(azureSignTool, arguments);
 }
 
 void ExecuteProcess(FilePath fileName, ProcessArgumentBuilder arguments, string workingDirectory = null)
