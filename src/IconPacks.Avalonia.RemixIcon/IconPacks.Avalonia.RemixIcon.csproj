@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);REMIXICON</DefineConstants>
+        <IconsName>RemixIcon</IconsName>
+        <AssemblyName>IconPacks.Avalonia.RemixIcon</AssemblyName>
+        <Title>IconPacks.Avalonia.RemixIcon</Title>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Resources/**" />
+    </ItemGroup>
+
+</Project>

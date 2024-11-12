@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconRemixIcon Kind="_24HoursFill" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconRemixIcon.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconRemixIcon" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconRemixIcon}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconRemixIcon.Theme}"
+                  TargetType="iconPacks:PackIconRemixIcon" />
+
+</ResourceDictionary>

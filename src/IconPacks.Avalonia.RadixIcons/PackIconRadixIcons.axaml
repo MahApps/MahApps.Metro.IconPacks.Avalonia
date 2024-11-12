@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconRadixIcons Kind="Accessibility" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconRadixIcons.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconRadixIcons" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconRadixIcons}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconRadixIcons.Theme}"
+                  TargetType="iconPacks:PackIconRadixIcons" />
+
+</ResourceDictionary>

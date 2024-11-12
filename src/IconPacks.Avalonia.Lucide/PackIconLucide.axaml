@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconLucide Kind="AArrowDown" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconLucide.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconLucide" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconLucide}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconLucide.Theme}"
+                  TargetType="iconPacks:PackIconLucide" />
+
+</ResourceDictionary>

@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconRPGAwesome Kind="Acid" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconRPGAwesome.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconRPGAwesome" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconRPGAwesome}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconRPGAwesome.Theme}"
+                  TargetType="iconPacks:PackIconRPGAwesome" />
+
+</ResourceDictionary>

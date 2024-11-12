@@ -1,4 +1,4 @@
-<Styles xmlns="https://github.com/avaloniaui"
+﻿<Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Styles.Resources>
         <ResourceDictionary>
@@ -9,5 +9,40 @@
     </Styles.Resources>
 
     <StyleInclude Source="avares://IconPacks.Avalonia.Core/PackIcon.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.BootstrapIcons/BootstrapIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.BoxIcons/BoxIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.CircumIcons/CircumIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Codicons/Codicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Coolicons/Coolicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Entypo/Entypo.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.EvaIcons/EvaIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.FeatherIcons/FeatherIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.FileIcons/FileIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Fontaudio/Fontaudio.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.FontAwesome/FontAwesome.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Fontisto/Fontisto.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.ForkAwesome/ForkAwesome.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.GameIcons/GameIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Ionicons/Ionicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.JamIcons/JamIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Lucide/Lucide.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Material/Material.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MaterialLight/MaterialLight.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MaterialDesign/MaterialDesign.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MemoryIcons/MemoryIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Microns/Microns.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Modern/Modern.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Octicons/Octicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.PhosphorIcons/PhosphorIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.PicolIcons/PicolIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.PixelartIcons/PixelartIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.RadixIcons/RadixIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.RemixIcon/RemixIcon.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.RPGAwesome/RPGAwesome.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.SimpleIcons/SimpleIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Typicons/Typicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Unicons/Unicons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.VaadinIcons/VaadinIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.WeatherIcons/WeatherIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.Zondicons/Zondicons.axaml" />
 </Styles>

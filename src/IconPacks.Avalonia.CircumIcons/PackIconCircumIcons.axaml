@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconCircumIcons Kind="AirportSign1" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconCircumIcons.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconCircumIcons" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconCircumIcons}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconCircumIcons.Theme}"
+                  TargetType="iconPacks:PackIconCircumIcons" />
+
+</ResourceDictionary>

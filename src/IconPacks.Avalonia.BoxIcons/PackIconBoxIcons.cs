@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.BoxIcons
     {
         public PackIconBoxIcons()
         {
-            base.UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, true);
         }
 
         public static readonly StyledProperty<PackIconBoxIconsKind> KindProperty

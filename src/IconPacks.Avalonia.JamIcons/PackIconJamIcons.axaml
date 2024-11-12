@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconJamIcons Kind="_500px" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconJamIcons.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconJamIcons" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconJamIcons}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconJamIcons.Theme}"
+                  TargetType="iconPacks:PackIconJamIcons" />
+
+</ResourceDictionary>

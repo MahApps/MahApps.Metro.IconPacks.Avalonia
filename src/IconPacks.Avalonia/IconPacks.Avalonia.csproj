@@ -12,7 +12,42 @@
 
     <ItemGroup>
         <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.BootstrapIcons\IconPacks.Avalonia.BootstrapIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.BoxIcons\IconPacks.Avalonia.BoxIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.CircumIcons\IconPacks.Avalonia.CircumIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Codicons\IconPacks.Avalonia.Codicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Coolicons\IconPacks.Avalonia.Coolicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Entypo\IconPacks.Avalonia.Entypo.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.EvaIcons\IconPacks.Avalonia.EvaIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.FeatherIcons\IconPacks.Avalonia.FeatherIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.FileIcons\IconPacks.Avalonia.FileIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Fontaudio\IconPacks.Avalonia.Fontaudio.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.FontAwesome\IconPacks.Avalonia.FontAwesome.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Fontisto\IconPacks.Avalonia.Fontisto.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.ForkAwesome\IconPacks.Avalonia.ForkAwesome.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.GameIcons\IconPacks.Avalonia.GameIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Ionicons\IconPacks.Avalonia.Ionicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.JamIcons\IconPacks.Avalonia.JamIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Lucide\IconPacks.Avalonia.Lucide.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Material\IconPacks.Avalonia.Material.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.MaterialLight\IconPacks.Avalonia.MaterialLight.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.MaterialDesign\IconPacks.Avalonia.MaterialDesign.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.MemoryIcons\IconPacks.Avalonia.MemoryIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Microns\IconPacks.Avalonia.Microns.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Modern\IconPacks.Avalonia.Modern.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Octicons\IconPacks.Avalonia.Octicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.PhosphorIcons\IconPacks.Avalonia.PhosphorIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.PicolIcons\IconPacks.Avalonia.PicolIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.PixelartIcons\IconPacks.Avalonia.PixelartIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.RadixIcons\IconPacks.Avalonia.RadixIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.RemixIcon\IconPacks.Avalonia.RemixIcon.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.RPGAwesome\IconPacks.Avalonia.RPGAwesome.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.SimpleIcons\IconPacks.Avalonia.SimpleIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Typicons\IconPacks.Avalonia.Typicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Unicons\IconPacks.Avalonia.Unicons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.VaadinIcons\IconPacks.Avalonia.VaadinIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.WeatherIcons\IconPacks.Avalonia.WeatherIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.Zondicons\IconPacks.Avalonia.Zondicons.csproj" />
     </ItemGroup>
 
 </Project>

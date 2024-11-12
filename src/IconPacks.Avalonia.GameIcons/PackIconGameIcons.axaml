@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+                    x:ClassModifier="internal">
+
+    <Design.PreviewWith>
+        <iconPacks:PackIconGameIcons Kind="_3dGlasses" />
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="IconPacks.Avalonia.PackIconGameIcons.Theme"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
+                  TargetType="iconPacks:PackIconGameIcons" />
+
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconGameIcons}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconGameIcons.Theme}"
+                  TargetType="iconPacks:PackIconGameIcons" />
+
+</ResourceDictionary>
