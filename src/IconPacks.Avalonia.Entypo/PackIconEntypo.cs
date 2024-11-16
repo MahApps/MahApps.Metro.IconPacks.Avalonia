@@ -6,7 +6,7 @@ using IconPacks.Avalonia.Core.Attributes;
 namespace IconPacks.Avalonia.Entypo
 {
     /// <summary>
-    /// All icons sourced from Entypo+ Icons Font <see><cref>http://www.entypo.com</cref></see>
+    /// All icons sourced from Entypo+ Icons Font <see><cref>http://www.entypo.com</cref></see> by Daniel Bruce <see><cref>https://www.danielbruce.se/</cref></see>
     /// Licensed under [CC BY 4.0](<see><cref>http://creativecommons.org/licenses/by-sa/4.0/</cref></see>).
     /// </summary>
     [MetaData("Entypo+", "http://www.entypo.com/", "https://creativecommons.org/licenses/by-sa/4.0/")]
