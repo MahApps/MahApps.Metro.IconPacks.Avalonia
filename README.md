@@ -73,7 +73,202 @@ The same icons are also available for `WPF` and `UWP` at [MahApps.Metro.IconPack
 
 ### Install
 
+IconPacks.Avalonia is delivered via NuGet package manager. You can find the packages here:
+#### All Icons in one package
+- [IconPacks.Avalonia](https://www.nuget.org/packages/IconPacks.Avalonia/)
+#### Separate Icon packages
+- [IconPacks.Avalonia.BootstrapIcons](https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/)
+- [IconPacks.Avalonia.BoxIcons](https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/)
+- [IconPacks.Avalonia.CircumIcons](https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/)
+- [IconPacks.Avalonia.Codicons](https://www.nuget.org/packages/IconPacks.Avalonia.Codicons/)
+- [IconPacks.Avalonia.Coolicons](https://www.nuget.org/packages/IconPacks.Avalonia.Coolicons/)
+- [IconPacks.Avalonia.Entypo](https://www.nuget.org/packages/IconPacks.Avalonia.Entypo/)
+- [IconPacks.Avalonia.EvaIcons](https://www.nuget.org/packages/IconPacks.Avalonia.EvaIcons/)
+- [IconPacks.Avalonia.FeatherIcons](https://www.nuget.org/packages/IconPacks.Avalonia.FeatherIcons/)
+- [IconPacks.Avalonia.FileIcons](https://www.nuget.org/packages/IconPacks.Avalonia.FileIcons/)
+- [IconPacks.Avalonia.Fontaudio](https://www.nuget.org/packages/IconPacks.Avalonia.Fontaudio/)
+- [IconPacks.Avalonia.FontAwesome](https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome/)
+- [IconPacks.Avalonia.Fontisto](https://www.nuget.org/packages/IconPacks.Avalonia.Fontisto/)
+- [IconPacks.Avalonia.ForkAwesome](https://www.nuget.org/packages/IconPacks.Avalonia.ForkAwesome/)
+- [IconPacks.Avalonia.GameIcons](https://www.nuget.org/packages/IconPacks.Avalonia.GameIcons/)
+- [IconPacks.Avalonia.Ionicons](https://www.nuget.org/packages/IconPacks.Avalonia.Ionicons/)
+- [IconPacks.Avalonia.JamIcons](https://www.nuget.org/packages/IconPacks.Avalonia.JamIcons/)
+- [IconPacks.Avalonia.Lucide](https://www.nuget.org/packages/IconPacks.Avalonia.Lucide/)
+- [IconPacks.Avalonia.Material](https://www.nuget.org/packages/IconPacks.Avalonia.Material/)
+- [IconPacks.Avalonia.MaterialLight](https://www.nuget.org/packages/IconPacks.Avalonia.MaterialLight/)
+- [IconPacks.Avalonia.MaterialDesign](https://www.nuget.org/packages/IconPacks.Avalonia.MaterialDesign/)
+- [IconPacks.Avalonia.MemoryIcons](https://www.nuget.org/packages/IconPacks.Avalonia.MemoryIcons/)
+- [IconPacks.Avalonia.Microns](https://www.nuget.org/packages/IconPacks.Avalonia.Microns/)
+- [IconPacks.Avalonia.Modern](https://www.nuget.org/packages/IconPacks.Avalonia.Modern/)
+- [IconPacks.Avalonia.Octicons](https://www.nuget.org/packages/IconPacks.Avalonia.Octicons/)
+- [IconPacks.Avalonia.PhosphorIcons](https://www.nuget.org/packages/IconPacks.Avalonia.PhosphorIcons/)
+- [IconPacks.Avalonia.PicolIcons](https://www.nuget.org/packages/IconPacks.Avalonia.PicolIcons/)
+- [IconPacks.Avalonia.PixelartIcons](https://www.nuget.org/packages/IconPacks.Avalonia.PixelartIcons/)
+- [IconPacks.Avalonia.RadixIcons](https://www.nuget.org/packages/IconPacks.Avalonia.RadixIcons/)
+- [IconPacks.Avalonia.RemixIcon](https://www.nuget.org/packages/IconPacks.Avalonia.RemixIcon/)
+- [IconPacks.Avalonia.RPGAwesome](https://www.nuget.org/packages/IconPacks.Avalonia.RPGAwesome/)
+- [IconPacks.Avalonia.SimpleIcons](https://www.nuget.org/packages/IconPacks.Avalonia.SimpleIcons/)
+- [IconPacks.Avalonia.Typicons](https://www.nuget.org/packages/IconPacks.Avalonia.Typicons/)
+- [IconPacks.Avalonia.Unicons](https://www.nuget.org/packages/IconPacks.Avalonia.Unicons/)
+- [IconPacks.Avalonia.VaadinIcons](https://www.nuget.org/packages/IconPacks.Avalonia.VaadinIcons/)
+- [IconPacks.Avalonia.WeatherIcons](https://www.nuget.org/packages/IconPacks.Avalonia.WeatherIcons/)
+- [IconPacks.Avalonia.Zondicons](https://www.nuget.org/packages/IconPacks.Avalonia.Zondicons/)
+
+Use these commands in the Package Manager console to install packages manually:
+```
+Install-Package IconPacks.Avalonia
+
+or one of these
+
+Install-Package IconPacks.Avalonia.BootstrapIcons
+Install-Package IconPacks.Avalonia.BoxIcons
+Install-Package IconPacks.Avalonia.CircumIcons
+Install-Package IconPacks.Avalonia.Codicons
+Install-Package IconPacks.Avalonia.Coolicons
+Install-Package IconPacks.Avalonia.Entypo
+Install-Package IconPacks.Avalonia.EvaIcons
+Install-Package IconPacks.Avalonia.FeatherIcons
+Install-Package IconPacks.Avalonia.FileIcons
+Install-Package IconPacks.Avalonia.Fontaudio
+Install-Package IconPacks.Avalonia.FontAwesome
+Install-Package IconPacks.Avalonia.Fontisto
+Install-Package IconPacks.Avalonia.ForkAwesome
+Install-Package IconPacks.Avalonia.GameIcons
+Install-Package IconPacks.Avalonia.Ionicons
+Install-Package IconPacks.Avalonia.JamIcons
+Install-Package IconPacks.Avalonia.Lucide
+Install-Package IconPacks.Avalonia.Material
+Install-Package IconPacks.Avalonia.MaterialLight
+Install-Package IconPacks.Avalonia.MaterialDesign
+Install-Package IconPacks.Avalonia.MemoryIcons
+Install-Package IconPacks.Avalonia.Microns
+Install-Package IconPacks.Avalonia.Modern
+Install-Package IconPacks.Avalonia.Octicons
+Install-Package IconPacks.Avalonia.PhosphorIcons
+Install-Package IconPacks.Avalonia.PicolIcons
+Install-Package IconPacks.Avalonia.PixelartIcons
+Install-Package IconPacks.Avalonia.RadixIcons
+Install-Package IconPacks.Avalonia.RemixIcon
+Install-Package IconPacks.Avalonia.RPGAwesome
+Install-Package IconPacks.Avalonia.SimpleIcons
+Install-Package IconPacks.Avalonia.Typicons
+Install-Package IconPacks.Avalonia.Unicons
+Install-Package IconPacks.Avalonia.VaadinIcons
+Install-Package IconPacks.Avalonia.WeatherIcons
+Install-Package IconPacks.Avalonia.Zondicons
+```
+
 ### Usage
+
+Use this `axaml`/`xaml` namespace for all IconPacks:
+```xml
+xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
+```
+
+Add the styles to the Applications styles
+```xml
+    <Application.Styles>
+        <FluentTheme />
+
+        <StyleInclude Source="avares://IconPacks.Avalonia/Icons.axaml" />
+    </Application.Styles>
+```
+
+`avares://IconPacks.Avalonia/Icons.axaml` should be used when using the main `IconPacks.Avalonia` NuGet package.
+
+All other has the naming scheme `avares://IconPacks.Avalonia.<PACKAGENAME>/Icons.axaml`
+
+#### The PackIcon controls
+The `PackIcon` controls are the main featured controls to use an icon from an IconPack in a simple way.
+
+Each package has there own control with this name scheme: `PackIcon<PACKAGENAME>`
+```xml
+<iconPacks:PackIconBoxIcons Kind="RegularAlarm"
+                            Width="24"
+                            Height="24" />
+```
+or
+```xml
+<iconPacks:PackIconCodicons Kind="SaveAll"
+                            Width="24"
+                            Height="24" />
+```
+
+#### The PackIconControl
+The `PackIconControl` is a control which can be used for any kind of available `IconPacks`.
+
+This control is only available with the main `IconPacks.Avalonia` NuGet package.
+```xml
+<iconPacks:PackIconControl Kind="{x:Static iconPacks:PackIconBoxIconsKind.RegularAlarm}"
+                           Width="24"
+                           Height="24" />
+```
+or
+```xml
+<iconPacks:PackIconControl Kind="{x:Static iconPacks:PackIconCodiconsKind.SaveAll}"
+                           Width="24"
+                           Height="24" />
+```
+
+#### The PackIcon MarkupExtensions
+
+A faster way to get an Icon for any `ContentControl` is to use the `PackIcon` `MarkupExtension`.
+
+If you want e.g. a `Button` with an Icon from the `Codicons` then you can do this:
+```xml
+<Button Content="{iconPacks:Codicons SaveAll}" />
+
+<!-- or -->
+
+<Button Content="{iconPacks:Codicons Kind=SaveAll}" />
+```
+It's also possible to use some properties of the MarkupExtension like this:
+```xml
+<Button Content="{iconPacks:Codicons SaveAll, Width=32, Height=32}" />
+```
+
+There is also a general (generic) `MarkupExtension` available.
+With this `MarkupExtension` you can use any IconPack enumeration.
+
+This `MarkupExtension` is only available with the main `IconPacks.Avalonia` NuGet package.
+```xml
+<Button Content="{iconPacks:PackIcon {x:Static iconPacks:PackIconCodiconsKind.SaveAll}, Width=32, Height=32}" />
+```
+
+#### The PackIcon Image MarkupExtensions
+
+It's possible to use all icons as an Image with the PackIcon image `MarkupExtension`.
+```xml
+<Image Source="{iconPacks:BoxIconsImage Kind=RegularAtom, Brush=Brown}"
+       Width="24" Height="24"
+       HorizontalAlignment="Left" Margin="10" />
+```
+
+In addition, there is also a general (generic) `MarkupExtension` available. 
+
+This `MarkupExtension` is only available with the main `IconPacks.Avalonia` NuGet package.
+```xml
+<Image Source="{iconPacks:PackIconImage Kind={x:Static iconPacks:PackIconBoxIconsKind.RegularAlarm}, Brush=GreenYellow}"
+       Width="24" Height="24"
+       HorizontalAlignment="Left" Margin="10" />
+```
+
+#### The PackIcon ImageConverter
+The PackIcon image converters can be used to convert a PackIcon to an Image.
+```xml
+<Image Source="{Binding #BoxIconsKindCombobox.SelectedItem, Mode=OneWay, Converter={iconPacks:PackIconBoxIconsKindToImageConverter Brush=Goldenrod}}"
+       Width="24" Height="24"
+       HorizontalAlignment="Left" Margin="10" />
+```
+
+In addition, there is also a general (generic) `PackIconKindToImageConverter` available. 
+
+This `PackIconKindToImageConverter` is only available with the main `IconPacks.Avalonia` NuGet package.
+```xml
+<Image Source="{Binding #BoxIconsKindCombobox.SelectedItem, Mode=OneWay, Converter={iconPacks:PackIconKindToImageConverter Brush=Goldenrod}}"
+       Width="24" Height="24"
+       HorizontalAlignment="Left" Margin="10" />
+```
 
 ## Want to say thanks?
 
