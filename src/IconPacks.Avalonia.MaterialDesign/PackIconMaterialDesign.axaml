@@ -7,12 +7,8 @@
         <iconPacks:PackIconMaterialDesign Kind="_10k" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconMaterialDesign.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconMaterialDesign" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconMaterialDesign}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconMaterialDesign.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconMaterialDesign" />
 
 </ResourceDictionary>

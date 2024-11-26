@@ -7,12 +7,8 @@
         <iconPacks:PackIconIonicons Kind="AddCircleOutlineiOS" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconIonicons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconIonicons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconIonicons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconIonicons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconIonicons" />
 
 </ResourceDictionary>

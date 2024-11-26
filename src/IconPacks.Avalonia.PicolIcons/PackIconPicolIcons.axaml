@@ -7,12 +7,8 @@
         <iconPacks:PackIconPicolIcons Kind="Accept" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconPicolIcons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconPicolIcons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconPicolIcons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconPicolIcons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconPicolIcons" />
 
 </ResourceDictionary>

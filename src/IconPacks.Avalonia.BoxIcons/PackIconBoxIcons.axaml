@@ -7,12 +7,8 @@
         <iconPacks:PackIconBoxIcons Kind="Logos_500px" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconBoxIcons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconBoxIcons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconBoxIcons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconBoxIcons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconBoxIcons" />
 
 </ResourceDictionary>

@@ -7,12 +7,8 @@
         <iconPacks:PackIconUnicons Kind="_0PlusLine" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconUnicons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconUnicons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconUnicons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconUnicons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconUnicons" />
 
 </ResourceDictionary>

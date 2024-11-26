@@ -7,12 +7,8 @@
         <iconPacks:PackIconVaadinIcons Kind="Abacus" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconVaadinIcons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconVaadinIcons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconVaadinIcons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconVaadinIcons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconVaadinIcons" />
 
 </ResourceDictionary>

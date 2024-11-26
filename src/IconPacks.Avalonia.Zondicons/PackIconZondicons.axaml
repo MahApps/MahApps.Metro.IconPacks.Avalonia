@@ -7,12 +7,8 @@
         <iconPacks:PackIconZondicons Kind="AddOutline" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconZondicons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconZondicons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconZondicons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconZondicons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconZondicons" />
 
 </ResourceDictionary>

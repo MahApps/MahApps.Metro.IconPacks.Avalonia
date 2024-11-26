@@ -7,12 +7,8 @@
         <iconPacks:PackIconCoolicons Kind="AddColumn" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconCoolicons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconCoolicons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconCoolicons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconCoolicons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconCoolicons" />
 
 </ResourceDictionary>

@@ -7,12 +7,8 @@
         <iconPacks:PackIconRPGAwesome Kind="Acid" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconRPGAwesome.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconRPGAwesome" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconRPGAwesome}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconRPGAwesome.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconRPGAwesome" />
 
 </ResourceDictionary>

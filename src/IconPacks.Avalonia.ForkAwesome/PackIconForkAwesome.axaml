@@ -7,12 +7,8 @@
         <iconPacks:PackIconForkAwesome Kind="_500px" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconForkAwesome.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconForkAwesome" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconForkAwesome}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconForkAwesome.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconForkAwesome" />
 
 </ResourceDictionary>

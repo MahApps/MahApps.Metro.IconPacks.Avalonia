@@ -7,12 +7,8 @@
         <iconPacks:PackIconFontisto Kind="_500px" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconFontisto.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconFontisto" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconFontisto}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconFontisto.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconFontisto" />
 
 </ResourceDictionary>

@@ -7,12 +7,8 @@
         <iconPacks:PackIconOcticons Kind="Accessibility" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconOcticons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconOcticons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconOcticons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconOcticons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconOcticons" />
 
 </ResourceDictionary>

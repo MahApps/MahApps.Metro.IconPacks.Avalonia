@@ -7,12 +7,8 @@
         <iconPacks:PackIconRemixIcon Kind="_24HoursFill" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconRemixIcon.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconRemixIcon" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconRemixIcon}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconRemixIcon.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconRemixIcon" />
 
 </ResourceDictionary>

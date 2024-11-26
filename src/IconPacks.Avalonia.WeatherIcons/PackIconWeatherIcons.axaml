@@ -7,12 +7,8 @@
         <iconPacks:PackIconWeatherIcons Kind="Alien" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="IconPacks.Avalonia.PackIconWeatherIcons.Theme"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconWeatherIcons" />
-
     <ControlTheme x:Key="{x:Type iconPacks:PackIconWeatherIcons}"
-                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconWeatherIcons.Theme}"
+                  BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
                   TargetType="iconPacks:PackIconWeatherIcons" />
 
 </ResourceDictionary>
